@@ -54,7 +54,7 @@ func newDeck() deck {
 	return cards
 }
 
-func newDeckFromFile(filename string) deck {
+func LoadDeck(filename string) deck {
 	bs, err := ioutil.ReadFile(filename)
 	if err != nil {
 		fmt.Println("Error: ", err)
